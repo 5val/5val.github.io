@@ -1,0 +1,175 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.navigasi{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    display: none;
+}
+
+.logo{
+    position: fixed;
+    z-index: 3;
+}
+
+.logo a{
+    visibility: visible;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+a.logo_nav{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.logo_nav img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.logo:hover + div.navigasi,
+.navigasi:hover{
+    display: block;
+}
+
+.navbar p{
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    border-bottom: 5px solid white;
+    color: white;
+}
+
+.navbar a:hover p{
+    background-color: darkgreen;
+}
+
+.konten{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+body{
+    background-image: url(beMyFriend_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    text-align: center;
+}
+
+.header #main_judul{
+    font-size: 100px;
+}
+
+.header #about_judul{
+    font-size: 40px;
+}
+
+#perbandingan{
+    padding-bottom: 200px;
+    margin-top: 100px;
+}
+
+#perbandingan p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.p_box{
+    width: 550px;
+    height: 80px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.p_box p{
+    margin: 0;
+    padding: 10px;
+}
+
+#p_nama{
+    background-color: #73ca91;
+    margin-left: 30px;
+}
+
+#p_asal{
+    background-color: #91c478;
+    margin-left: 480px;
+}
+
+#p_umur{
+    background-color: #a3cea9;
+    margin-left: 940px;
+}
+
+#p_lahir{
+    background-color: #b3e1b0;
+    margin-left: 480px;
+}
+
+#p_hobi{
+    background-color: #c5e2c3;
+    margin-left: 30px;
+}
+
+#p_makanan{
+    background-color: #dbfec9;
+    margin-left: 480px;
+}
+
+#p_minuman{
+    background-color: #d0fae2;
+    margin-left: 940px;
+}
+
+#p_warna{
+    background-color: #baeedd;
+    margin-left: 480px;
+}
+
+#p_genre{
+    background-color: #b2d4cf;
+    margin-left: 30px;
+}
+
+#p_artis{
+    background-color: #87f6c6;
+    margin-left: 480px;
+}
+
+#p_akhir{
+    background-color: #3df5a5;
+    margin-left: 940px;
+    line-height: 55px;
+}

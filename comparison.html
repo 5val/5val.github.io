@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+    <link rel="stylesheet" href="comparison.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="navigasi">
+        <a href="index.html" class="logo_nav">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+        <div class="navbar">
+            <a href="futurePredictions.html"><p>Future Predictions</p></a>
+            <a href="makeTheChoice.html"><p>Make The Choice</p></a>
+            <a href="myDesignCollection.html"><p>My Design Collection</p></a>
+            <a href="beMyFriend.html"><p>Be My Friend</p></a>
+            <a href="controlTheImage.html"><p>Control The Image</p></a>
+            <a href="eatUp.html"><p>Eat Up</p></a>
+            <a href="spend.html"><p>Spend</p></a>
+            <a href="aboutUs.html"><p>About Us</p></a>
+        </div>
+    </div>
+    <div class="konten">
+        <div class="header">
+            <h1 id="main_judul">Our Comparison</h1>
+            <p id="about_judul">ini adalah perbandingan dari data-data yang kamu isi tadi</p>
+        </div>
+        <div id="perbandingan">
+            <div class="p_box" id="p_nama">
+                <p>Namaku adalah Valensia Clarins</p>
+            </div>
+            <div class="p_box" id="p_asal">
+                <p>Aku berasal dari Bondowoso</p>
+            </div>
+            <div class="p_box" id="p_umur">
+                <p>Aku berumur 18 tahun</p>
+            </div>
+            <div class="p_box" id="p_lahir">
+                <p>Aku lahir pada 2005-05-05</p>
+            </div>
+            <div class="p_box" id="p_hobi">
+                <p>Hobiku adalah mendengarkan musik</p>
+            </div>
+            <div class="p_box" id="p_makanan">
+                <p>Makanan favoritku adalah nasi goreng</p>
+            </div>
+            <div class="p_box" id="p_minuman">
+                <p>Minuman favoritku adalah matcha milk tea</p>
+            </div>
+            <div class="p_box" id="p_warna">
+                <p>Warna favoritku adalah biru</p>
+            </div>
+            <div class="p_box" id="p_genre">
+                <p>Genre musik favoritku adalah pop dan indie</p>
+            </div>
+            <div class="p_box" id="p_artis">
+                <p>Artis favoritku adalah Taylor Swift</p>
+            </div>
+            <div class="p_box" id="p_akhir">
+                <p>Senang bertemu denganmu!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // var urlParams = new URLSearchParams(window.location.search);
+        // for (var [key, value] of urlParams) {
+        //     if (key == 'nama') {
+        //         var decodedValue = decodeURIComponent(value)
+        //         document.getElementById("perbandingan").innerText = "<p>Namamu adalah " + decodedValue + "</p>";
+        //     }
+        //     if (key == 'asal') {
+        //         var decodedValue = decodeURIComponent(value)
+        //         document.getElementById("perbandingan").innerText += "<p>Kamu berasal dari " + decodedValue + "</p>";
+        //     }
+        // }
+
+        // var urlParams = new URLSearchParams(window.location.search);
+        // var value = urlParams.get('nama');
+        // // Decode the value to handle special characters
+        // var decodedValue = decodeURIComponent(value);
+        // // Display the value on the page
+        // document.getElementById("perbandingan").innerText += decodedValue;
+
+        var value = localStorage.getItem('nama');
+        document.getElementById("p_nama").innerHTML += "<p style='background-color: #73ca91; border-radius: 20px;'>Namamu adalah " + value + "</p>";;
+        value = localStorage.getItem('asal');
+        document.getElementById("p_asal").innerHTML += "<p style='background-color: #91c478; border-radius: 20px;'>Kamu berasal dari " + value + "</p>";
+        value = localStorage.getItem('umur');
+        document.getElementById("p_umur").innerHTML += "<p style='background-color: #a3cea9; border-radius: 20px;'>Kamu berumur " + value + " tahun</p>";
+        value = localStorage.getItem('lahir');
+        document.getElementById("p_lahir").innerHTML += "<p style='background-color: #b3e1b0; border-radius: 20px;'>Kamu lahir pada " + value + "</p>";
+        value = localStorage.getItem('hobi');
+        document.getElementById("p_hobi").innerHTML += "<p style='background-color: #c5e2c3; border-radius: 20px;'>Hobimu adalah " + value + "</p>";
+        value = localStorage.getItem('makanan');
+        document.getElementById("p_makanan").innerHTML += "<p style='background-color: #dbfec9; border-radius: 20px;'>Makanan favoritmu adalah " + value + "</p>";
+        value = localStorage.getItem('minuman');
+        document.getElementById("p_minuman").innerHTML += "<p style='background-color: #d0fae2; border-radius: 20px;'>Minuman favoritmu adalah " + value + "</p>";
+        value = localStorage.getItem('warna');
+        document.getElementById("p_warna").innerHTML += "<p style='background-color: #baeedd; border-radius: 20px;'>Warna favoritmu adalah " + value + "</p>";
+        value = localStorage.getItem('genre');
+        document.getElementById("p_genre").innerHTML += "<p style='background-color: #b2d4cf; border-radius: 20px;'>Genre favoritmu adalah " + value + "</p>";
+        value = localStorage.getItem('artis');
+        document.getElementById("p_artis").innerHTML += "<p style='background-color: #87f6c6; border-radius: 20px;'>Artis favoritmu adalah " + value + "</p>";
+    </script>
+</body>
+</html>
