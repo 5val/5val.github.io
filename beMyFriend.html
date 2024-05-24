@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Friend</title>
+    <link rel="stylesheet" href="beMyFriend.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="navigasi">
+        <a href="index.html" class="logo_nav">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+        <div class="navbar">
+            <a href="futurePredictions.html"><p>Future Predictions</p></a>
+            <a href="makeTheChoice.html"><p>Make The Choice</p></a>
+            <a href="myDesignCollection.html"><p>My Design Collection</p></a>
+            <a href="beMyFriend.html"><p>Be My Friend</p></a>
+            <a href="controlTheImage.html"><p>Control The Image</p></a>
+            <a href="eatUp.html"><p>Eat Up</p></a>
+            <a href="spend.html"><p>Spend</p></a>
+            <a href="aboutUs.html"><p>About Us</p></a>
+        </div>
+    </div>
+    <div class="konten">
+        <div class="header">
+            <h1 id="main_judul">Be My Friend</h1>
+            <p id="about_judul">isi form di bawah ini, lalu klik next untuk melihat kesamaan kita</p>
+        </div>
+        <div class="div_form">
+            <form action="comparison.html">
+                <table class="form_table">
+                    <tr>
+                        <td><p><b>Siapa namamu?</b></p></td>
+                        <td><input type="text" id="input_nama"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Kamu berasal dari mana?</b></p></td>
+                        <td><input type="text" id="input_asal"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Kamu umur berapa?</b></p></td>
+                        <td><input type="number" id="input_umur"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Kamu lahir tanggal berapa?</b></p></td>
+                        <td><input type="date" id="input_lahir"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Apa hobimu?</b></p></td>
+                        <td><input type="text" id="input_hobi"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Apa makanan favoritmu?</b></p></td>
+                        <td><input type="text" id="input_makanan"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Apa minuman favoritmu?</b></p></td>
+                        <td><input type="text" id="input_minuman"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Apa warna favoritmu?</b></p></td>
+                        <td><input type="text" id="input_warna"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Apa genre musik favoritmu?</b></p></td>
+                        <td><input type="text" id="input_genre"></td>
+                    </tr>
+                    <tr>
+                        <td><p><b>Siapa artis favoritmu?</b></p></td>
+                        <td><input type="text" id="input_artis"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="button">
+                            <input type="submit" value="Next" class="form_button" onclick="kirim()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function kirim() {
+            // window.location.href="comparison.html?nama="+document.getElementById("input_nama").value +"&asal="+document.getElementById("input_asal").value;
+            
+            // var inputValue = document.getElementById("input_nama").value;
+            // // Encode the value to handle special characters
+            // var encodedValue = encodeURIComponent(inputValue);
+            // // Redirect to the destination page with the value as a query parameter
+            // window.location.href = "comparison.html?nama=" + encodedValue;
+
+            var inputValue = document.getElementById("input_nama").value;
+            localStorage.setItem("nama", inputValue);
+            inputValue = document.getElementById("input_asal").value;
+            localStorage.setItem("asal", inputValue);
+            inputValue = document.getElementById("input_umur").value;
+            localStorage.setItem("umur", inputValue);
+            inputValue = document.getElementById("input_lahir").value;
+            localStorage.setItem("lahir", inputValue);
+            inputValue = document.getElementById("input_hobi").value;
+            localStorage.setItem("hobi", inputValue);
+            inputValue = document.getElementById("input_makanan").value;
+            localStorage.setItem("makanan", inputValue);
+            inputValue = document.getElementById("input_minuman").value;
+            localStorage.setItem("minuman", inputValue);
+            inputValue = document.getElementById("input_warna").value;
+            localStorage.setItem("warna", inputValue);
+            inputValue = document.getElementById("input_genre").value;
+            localStorage.setItem("genre", inputValue);
+            inputValue = document.getElementById("input_artis").value;
+            localStorage.setItem("artis", inputValue);
+            window.location.href = "comparison.html";
+        }
+    </script>
+</body>
+</html>
