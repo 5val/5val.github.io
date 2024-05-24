@@ -1,0 +1,146 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div.navigasi{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    display: none;
+}
+
+.logo{
+    position: fixed;
+    z-index: 3;
+}
+
+.logo a{
+    visibility: visible;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+a.logo_nav{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.logo_nav img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.logo:hover + div.navigasi,
+.navigasi:hover{
+    display: block;
+}
+
+.navbar p{
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    border-bottom: 5px solid white;
+    color: white;
+}
+
+.navbar a:hover p{
+    background-color: brown;
+}
+
+.konten{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.header{
+    background-color: rgb(195, 208, 225);
+    width: 100%;
+}
+
+table{
+    width: 100%;
+}
+
+.salam{
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 130px;
+}
+
+.judul_link{
+    font-size: 30px;
+    margin-left: 130px;
+}
+
+.links img{
+    width: 70px;
+}
+
+.links .ig{
+    margin-left: 130px;
+}
+
+.links .linkedin, .gmail{
+    margin-left: 20px;
+}
+
+.about_me{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.about_me_table img{
+    width: 400px;
+    float: right;
+    margin-right: 100px;
+}
+
+.about_me .judul_about_me{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.about_me .data_diri{
+    font-size: 20px;
+}
+
+.data_diri_table{
+    margin-right: 100px;
+}
+
+.penjelasan{
+    width: fit-content;
+    font-size: larger;
+    margin: 0 auto;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.penjelasan li{
+    margin-top: 7px;
+}
