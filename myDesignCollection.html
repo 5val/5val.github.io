@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Design Collection</title>
+    <link rel="stylesheet" href="myDesignCollection.css">
+</head>
+<body>
+    <div class="logo">
+        <a href="index.html">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="navigasi">
+        <a href="index.html" class="logo_nav">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+        <div class="navbar">
+            <a href="futurePredictions.html"><p>Future Predictions</p></a>
+            <a href="makeTheChoice.html"><p>Make The Choice</p></a>
+            <a href="myDesignCollection.html"><p>My Design Collection</p></a>
+            <a href="beMyFriend.html"><p>Be My Friend</p></a>
+            <a href="controlTheImage.html"><p>Control The Image</p></a>
+            <a href="eatUp.html"><p>Eat Up</p></a>
+            <a href="spend.html"><p>Spend</p></a>
+            <a href="aboutUs.html"><p>About Us</p></a>
+        </div>
+    </div>
+
+    <div class="konten">
+        <div class="header">
+            <h1 id="main_judul">My Design Collection</h1>
+            <p id="about_judul">ini adalah kumpulan design yang aku buat selama semester 1</p>
+        </div>
+        <div class="before">
+            <div class="designs" id="designs">
+                <div class="designbox" id="design1">
+                    <img src="design1.png" alt="design1" onclick="d1_reveal()">
+                </div>
+                <div class="designbox" id="design2">
+                    <img src="design2.png" alt="design2" onclick="d2_reveal()">
+                </div>
+                <div class="designbox" id="design3">
+                    <img src="design3.png" alt="design3" onclick="d3_reveal()">
+                </div>
+                <div class="designbox" id="design4">
+                    <img src="design4.png" alt="design4" onclick="d4_reveal()">
+                </div>
+                <div class="designbox" id="design5">
+                    <img src="design5.png" alt="design5" onclick="d5_reveal()">
+                </div>
+                <div class="designbox" id="design6">
+                    <img src="design6.png" alt="design6" onclick="d6_reveal()">
+                </div>
+            </div>
+        </div>
+        <div id="after">
+            <div class="back" id="back">
+                <p onclick="back()">Back</p>
+            </div>
+            <div class="after" id="after_design1">
+                <img src="design1.png" alt="design1">
+            </div>
+            <div class="after" id="after_design2">
+                <img src="design2.png" alt="design2">
+            </div>
+            <div class="after" id="after_design3">
+                <img src="design3.png" alt="design3">
+            </div>
+            <div class="after" id="after_design4">
+                <img src="design4.png" alt="design4">
+            </div>
+            <div class="after" id="after_design5">
+                <img src="design5.png" alt="design5">
+            </div>
+            <div class="after" id="after_design6">
+                <img src="design6.png" alt="design6">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function d1_reveal() {
+            document.getElementById("designs").style.visibility = "hidden";
+            document.getElementById("after_design1").style.visibility = "visible";
+            document.getElementById("back").style.visibility = "visible";
+        }
+        function d2_reveal() {
+            document.getElementById("designs").style.visibility = "hidden";
+            document.getElementById("after_design2").style.visibility = "visible";
+            document.getElementById("back").style.visibility = "visible";
+        }
+        function d3_reveal() {
+            document.getElementById("designs").style.visibility = "hidden";
+            document.getElementById("after_design3").style.visibility = "visible";
+            document.getElementById("back").style.visibility = "visible";
+        }
+        function d4_reveal() {
+            document.getElementById("designs").style.visibility = "hidden";
+            document.getElementById("after_design4").style.visibility = "visible";
+            document.getElementById("back").style.visibility = "visible";
+        }
+        function d5_reveal() {
+            document.getElementById("designs").style.visibility = "hidden";
+            document.getElementById("after_design5").style.visibility = "visible";
+            document.getElementById("back").style.visibility = "visible";
+        }
+        function d6_reveal() {
+            document.getElementById("designs").style.visibility = "hidden";
+            document.getElementById("after_design6").style.visibility = "visible";
+            document.getElementById("back").style.visibility = "visible";
+        }
+        function back() {
+            document.getElementById("back").style.visibility = "hidden";
+            document.getElementById("designs").style.visibility = "visible";
+            document.getElementById("after_design1").style.visibility = "hidden";
+            document.getElementById("after_design2").style.visibility = "hidden";
+            document.getElementById("after_design3").style.visibility = "hidden";
+            document.getElementById("after_design4").style.visibility = "hidden";
+            document.getElementById("after_design5").style.visibility = "hidden";
+            document.getElementById("after_design6").style.visibility = "hidden";
+        }
+    </script>
+</body>
+</html>

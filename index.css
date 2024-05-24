@@ -1,0 +1,206 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+div.navigasi{
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    display: none;
+}
+
+.logo{
+    position: fixed;
+    z-index: 3;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.logo a{
+    visibility: visible;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+a.logo_nav{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.logo_nav img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.logo:hover + div.navigasi,
+.navigasi:hover{
+    display: block;
+}
+
+.navbar p{
+    font-size: 20px;
+    padding: 20px;
+    width: 200px;
+    border-bottom: 5px solid white;
+    color: white;
+}
+
+.navbar a:hover p{
+    background-color: brown;
+}
+
+.konten {
+    position: absolute;
+    z-index: 1;
+    background-image: url(Main_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.judul{
+    font-size: 100px;
+}
+
+.about{
+    font-size: 30px;
+}
+
+.konten_web{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.konten_web a{
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    border: 5px solid black;
+    border-radius: 30px;
+    float: left;
+    width: 415px;
+    height: 170px;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+#box1 {
+    background-color: black;
+    color: white;
+}
+
+#box1:hover {
+    background-image: url(futurePredictions_background.jpg);
+    font-weight: bold;
+}
+
+#box2{
+    background-color: lightblue;
+    color: black;
+}
+
+#box2:hover{
+    background-image: url(makeTheChoice_background.jpeg);
+    background-size: 400px 175px;
+    font-weight: bold;
+}
+
+#box3{
+    background-color: pink;
+    color: black;
+}
+
+#box3:hover{
+    background-image: url(myDesignCollection_background.jpg);
+    background-size: 425px 175px;
+    font-weight: bold;
+}
+
+#box4{
+    background-color: greenyellow;
+    color: black;
+}
+
+#box4:hover{
+    background-image: url(beMyFriend_background.jpg);
+    background-size: 500px;
+    font-weight: bold;
+}
+
+#box5{
+    background-color: cornsilk;
+    color: black;
+}
+
+#box5:hover{
+    background-image: url(controlTheImage_background.jpg);
+    background-size: 400px;
+    font-weight: bold;
+}
+
+#box6{
+    background-color: cadetblue;
+    color: black;
+}
+
+#box6:hover{
+    background-image: url(eatUp_background.jpg);
+    background-size: 425px 225px;
+    font-weight: bold;
+}
+
+#box7{
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+#box7:hover{
+    background-image: url(spend_background.jpg);
+    background-size: 425px 225px;
+    font-weight: bold;
+}
+
+#box8{
+    background-color: cyan;
+    color: black;
+}
+
+#box8:hover{
+    background-image: url(aboutUs_background.png);
+    background-size: 400px;
+    font-weight: bold;
+}

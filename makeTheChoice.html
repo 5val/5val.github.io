@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make The Choice</title>
+    <link rel="stylesheet" href="makeTheChoice.css">
+</head>
+<body>
+    
+    <div class="konten">
+        <div class="judul">
+            <h1 id="main_judul">Make The Choice</h1>
+            <p id="about_judul">mari kita bereskan perdebatan-perdebatan yang ada di internet</p>
+        </div>
+
+        <div class="questions" id="q1">
+            <!-- is water wet? agree:60 disagree:40 -->
+            <h1 class="q_judul">Apakah air basah?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q1_a1" onclick="q1_reveal()">Setuju</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q1_a2" onclick="q1_reveal()">Tidak Setuju</p>
+                </div>
+            </div>
+            <div class="persentase" id="p1">
+                <div class="p_1" id="p1_1">Setuju (60%)</div>
+                <div class="p_2" id="p1_2">Tidak Setuju (40%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q2">
+            <!-- what came first, the chicken or the egg? chicken:50 egg:50 -->
+            <h1 class="q_judul">Mana yang lebih dulu, ayam atau telur?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q2_a1" onclick="q2_reveal()">Ayam</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q2_a2" onclick="q2_reveal()">Telur</p>
+                </div>
+            </div>
+            <div class="persentase" id="p2">
+                <div class="p_1" id="p2_1">Ayam (50%)</div>
+                <div class="p_2" id="p2_2">Telur (50%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q3">
+            <!-- is cereal a soup? agree:22 disagree:78 -->
+            <h1 class="q_judul">Apakah sereal adalah sup?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q3_a1" onclick="q3_reveal()">Setuju</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q3_a2" onclick="q3_reveal()">Tidak Setuju</p>
+                </div>
+            </div>
+            <div class="persentase" id="p3">
+                <div class="p_1" id="p3_1">Setuju (22%)</div>
+                <div class="p_2" id="p3_2">Tidak Setuju (78%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q4">
+            <!-- pepsi or coke? pepsi:35 coke:65 -->
+            <h1 class="q_judul">Pepsi atau Coke?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q4_a1" onclick="q4_reveal()">Pepsi</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q4_a2" onclick="q4_reveal()">Coke</p>
+                </div>
+            </div>
+            <div class="persentase" id="p4">
+                <div class="p_1" id="p4_1">Pepsi (35%)</div>
+                <div class="p_2" id="p4_2">Coke (65%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q5">
+            <!-- is pineapple on pizza good? agree:37 disagree:63 -->
+            <h1 class="q_judul">Apakah nanas dalam pizza enak?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q5_a1" onclick="q5_reveal()">Setuju</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q5_a2" onclick="q5_reveal()">Tidak Setuju</p>
+                </div>
+            </div>
+            <div class="persentase" id="p5">
+                <div class="p_1" id="p5_1">Setuju (37%)</div>
+                <div class="p_2" id="p5_2">Tidak Setuju (63%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q6">
+            <!-- marvel or dc? marvel:82 dc:18 -->
+            <h1 class="q_judul">Marvel atau DC?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q6_a1" onclick="q6_reveal()">Marvel</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q6_a2" onclick="q6_reveal()">DC</p>
+                </div>
+            </div>
+            <div class="persentase" id="p6">
+                <div class="p_1" id="p6_1">Marvel (82%)</div>
+                <div class="p_2" id="p6_2">DC (18%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q7">
+            <!-- IPhone or adnroid? iphone:62 android:38 -->
+            <h1 class="q_judul">IPhone atau Android?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q7_a1" onclick="q7_reveal()">IPhone</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q7_a2" onclick="q7_reveal()">Android</p>
+                </div>
+            </div>
+            <div class="persentase" id="p7">
+                <div class="p_1" id="p7_1">IPhone (62%)</div>
+                <div class="p_2" id="p7_2">Android (38%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q8">
+            <!-- does a straw have one hole or two? one:60 two:40 -->
+            <h1 class="q_judul">Sebuah sedotan mempunyai satu atau dua lubang?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q8_a1" onclick="q8_reveal()">Satu</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q8_a2" onclick="q8_reveal()">Dua</p>
+                </div>
+            </div>
+            <div class="persentase" id="p8">
+                <div class="p_1" id="p8_1">Satu (60%)</div>
+                <div class="p_2" id="p8_2">Dua (40%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q9">
+            <!-- is tomato a fruit or a vegetable? fruit:70 vegetable:30 -->
+            <h1 class="q_judul">Tomat itu buah atau sayur?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q9_a1" onclick="q9_reveal()">Buah</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q9_a2" onclick="q9_reveal()">Sayur</p>
+                </div>
+            </div>
+            <div class="persentase" id="p9">
+                <div class="p_1" id="p9_1">Buah (70%)</div>
+                <div class="p_2" id="p9_2">Sayur (30%)</div>
+            </div>
+        </div>
+        
+        <div class="questions" id="q10">
+            <!-- how do you pronounce gif? gif:84 jif:16 -->
+            <h1 class="q_judul">Bagaimana kamu mengucapkan gif?</h1>
+            <div class="q_answer">
+                <div class="q_answer1">
+                    <p id="q10_a1" onclick="q10_reveal()">Gif</p>
+                </div>
+                <div class="q_answer2">
+                    <p id="q10_a2" onclick="q10_reveal()">Jif</p>
+                </div>
+            </div>
+            <div class="persentase" id="p10">
+                <div class="p_1" id="p10_1">Gif (84%)</div>
+                <div class="p_2" id="p10_2">Jif (16%)</div>
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <a href="index.html">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="navigasi">
+        <a href="index.html" class="logo_nav">
+            <div>
+                <img src="logoV.jpg" alt="">
+            </div>
+        </a>
+        <div class="navbar">
+            <a href="futurePredictions.html"><p>Future Predictions</p></a>
+            <a href="makeTheChoice.html"><p>Make The Choice</p></a>
+            <a href="myDesignCollection.html"><p>My Design Collection</p></a>
+            <a href="beMyFriend.html"><p>Be My Friend</p></a>
+            <a href="controlTheImage.html"><p>Control The Image</p></a>
+            <a href="eatUp.html"><p>Eat Up</p></a>
+            <a href="spend.html"><p>Spend</p></a>
+            <a href="aboutUs.html"><p>About Us</p></a>
+        </div>
+    </div>
+
+    <script>
+        function q1_reveal() {
+            document.getElementById("p1").style.visibility = "visible";
+        }
+        function q2_reveal() {
+            document.getElementById("p2").style.visibility = "visible";
+        }
+        function q3_reveal() {
+            document.getElementById("p3").style.visibility = "visible";
+        }
+        function q4_reveal() {
+            document.getElementById("p4").style.visibility = "visible";
+        }
+        function q5_reveal() {
+            document.getElementById("p5").style.visibility = "visible";
+        }
+        function q6_reveal() {
+            document.getElementById("p6").style.visibility = "visible";
+        }
+        function q7_reveal() {
+            document.getElementById("p7").style.visibility = "visible";
+        }
+        function q8_reveal() {
+            document.getElementById("p8").style.visibility = "visible";
+        }
+        function q9_reveal() {
+            document.getElementById("p9").style.visibility = "visible";
+        }
+        function q10_reveal() {
+            document.getElementById("p10").style.visibility = "visible";
+        }
+    </script>
+</body>
+</html>

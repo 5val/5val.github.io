@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Up</title> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="eatUp.js"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+      }
+    </style>
+    <!-- maze.toys -->
+</head>
+<body>
+    <div class="game" style="width: 100%; height: 100vh; display: flex;">
+        <div class="panelSamping float-left" style="width: 30%; height: 100%; background-color: beige;">
+            <h1 class="text-center mt-3">Eat Up</h1>
+            <hr class="border border-3 border-dark">
+            <p class="text-center mx-5">A perfect warm-up challenge with wide paths and a straightforward layout. Grow bigger by munching on <span style="color: blue;">blue</span> snacks, but watch out for the <span style="color: red;">red</span> snacks for they are poisonous. Move yourself using <span style="font-size: large;">W, A, S, D</span> and remember to choose your snacks wisely to determine your points. Eat up to <span style="font-size: large;">15</span> <span style="color: blue;">blue</span> snacks to win the game</p>
+            <hr class="border border-3 border-dark">
+            <div class="d-flex px-5">
+                <button type="button" class="btn btn-outline-success shadow w-50 me-3" id="btnPlay">Play</button>
+                <button type="button" class="btn btn-outline-danger shadow w-50 me-3" id="btnReset">Reset</button>
+            </div>
+            <hr class="border border-3 border-dark">
+            <div class="d-flex justify-content-evenly" style="height: 50px;">
+                <p class="fs-5 mt-2 me-3">Time: <span id="menit">00</span>:<span id="detik">00</span></p>
+                <p class="fs-5 mt-2 me-4">Points: <span id="points">0</span></p>
+                <p class="fs-5 mt-2 me-4">Size: <span id="size">30</span></p>
+            </div>
+            <hr class="border border-3 border-dark">
+        </div>
+        <div class="float-left" style="width: 70%; height: 100%; background-color: darkseagreen;">
+          <div class="blueEaten fs-1 text-center" id="blueEaten" style="margin-top: 100px;">0</div>
+          <div class="lapangan border border-black border-3 d-flex mx-auto mt-4" style="width: 455px; height: 455px; flex-wrap: wrap;" id="lapangan">
+            <div class="player mx-auto my-auto" id="player" style="position: relative; width: 30px; height: 30px; background-color: black;"></div>
+            <!-- <div class="player mx-auto my-auto" id="player" style="position: absolute; width: 30px; height: 30px; background-color: white; top: 605px; left: 745px;"></div> -->
+          </div>
+        </div>
+    </div>
+    <div class="logo position-absolute" style="width: 50px; height: 50px; top: 15px; left: 15px;">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="border: none;">
+            <img src="logoV.jpg" alt="Bootstrap" width="50px" height="50px" style="border-radius: 50%;">
+          </button>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title" id="offcanvasNavbarLabel">val</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Other Pages
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="futurePredictions.html">Future Predictions</a></li>
+                    <li><a class="dropdown-item" href="makeTheChoice.html">Make The Choice</a></li>
+                    <li><a class="dropdown-item" href="myDesignCollection.html">My Design Collection</a></li>
+                    <li><a class="dropdown-item" href="beMyFriend.html">Be My Friend</a></li>
+                    <li><a class="dropdown-item" href="controlTheImage.html">Control The Image</a></li>
+                    <li><a class="dropdown-item" href="eatUp.html">Eat Up</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="aboutUs.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    <div class="modal fade" id="finishModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Congratulations! You Dit It!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Time : <span id="finalMenit">00</span>:<span class="me-5" id="finalDetik">00</span>Points : <span class="me-5" id="finalPoints">0</span>Size : <span id="finalSize">30</span>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
